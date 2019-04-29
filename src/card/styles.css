@@ -1,0 +1,28 @@
+.card-table {
+    background: #fff;
+    width: 100%;
+}
+
+.show-poster {
+    width: 60px;
+    float: left;
+    margin: 14px;
+}
+
+h2 {
+    margin: 0;
+    padding: .5rem;
+}
+
+.table {
+    border-bottom: 1px solid #dee2e6;
+}
+
+th {
+    border-right: 1px solid #dee2e6;
+    width: 10%;
+}
+
+.btn-time {
+    margin-right: 1%;
+}

@@ -1,25 +1,57 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-class App extends Component {
+import Card from "./card/card";
+import "./App.css";
+
+class App extends React.Component {
+  state = {
+    movies: [
+      {
+        title: "The Phatom of the opera",
+        dates: [
+          {
+            day: "Tue",
+            date: "Sep 22",
+            times: ["2:00", "5:00"]
+          },
+          {
+            day: "Wed",
+            date: "Sep 23",
+            times: ["1:00", "5:00", "8:00"]
+          },
+          {
+            day: "Thru",
+            date: "Sep 24",
+            times: ["1:00", "5:00", "8:00"]
+          }
+        ]
+      },
+      {
+        title: "Second Movie",
+        dates: [
+          {
+            day: "Tue",
+            date: "Sep 22",
+            times: ["8:00", "5:00"]
+          }
+        ]
+      },
+      {
+        title: "Third Movie",
+        dates: [
+          {
+            day: "Tue",
+            date: "Sep 22",
+            times: ["8:00", "5:00"]
+          }
+        ]
+      }
+    ]
+  };
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className="container">
+        <Card movies={this.state.movies} />
       </div>
     );
   }
