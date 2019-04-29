@@ -9,9 +9,34 @@
     margin: 14px;
 }
 
-h2 {
+.movie-title {
     margin: 0;
-    padding: .5rem;
+    padding-top: .4rem;
+    font-weight: 700;
+}
+
+.tickets-text {
+    font-weight: 400;
+}
+
+.ticket-price {
+    color: #1D781D;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.info-icon {
+    padding-right: 5px;
+}
+
+.learn-more-box {
+    padding-top: 7px;
+}
+
+.learn-more-link {
+    vertical-align: middle;
+    font-weight: 700;
+    font-size: 14px;
 }
 
 .table {
@@ -20,9 +45,37 @@ h2 {
 
 th {
     border-right: 1px solid #dee2e6;
-    width: 10%;
+    width: 80px;
+    font-weight: none;
+}
+
+.show-day, .show-date {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.show-day {
+    color: #444444;
+}
+
+.show-date {
+    color: #000000;
 }
 
 .btn-time {
     margin-right: 1%;
+    border-radius: 0.65rem;
+    background-color: #0068D9;
+    font-weight: 700;
+}
+
+.btn-time:hover {
+    background-color: #004BA0;
+
+}
+
+.more-performances {
+    padding: 0 10px 16px 0;
+    font-weight: 700;
+
 }
